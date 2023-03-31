@@ -1,4 +1,4 @@
-# Using merkle tree for data storage contracts
+# Using merkle tree for data storage / verification in contracts
 
 Will be using `merkletreejs` as that is what is commonly used
 
