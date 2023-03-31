@@ -83,11 +83,17 @@ contract CurateArt {
 
   function AddCuration(bytes32[] memory proof, address account) public view returns (bool) {
     bytes32 leaf = keccak256(abi.encodePacked(account));
-    // invalid address / leafs that are not on the merkle tree will revert
+    // invalid address or leafs that are not on the merkle tree will revert
     require(MerkleProof.verify(proof, merkleRoot, leaf), "Invalid curator proof or leaf");
 
-    // user now has ability to add to curation, allowing them to add curation & other logic
+    // user now has ability to add to curation & perform other logic
+    // TODO: Add logic
+
     return true;
+  }
+
+  function updateMerkle(bytes32 root) {
+    merkleRoot = root;
   }
 }
 ```
