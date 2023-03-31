@@ -1,0 +1,19 @@
+{
+	"name": "merkle-tree",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"curator": "node ./scripts/curators_merkle.ts",
+		"example": "node ./scripts/sha256_example.ts"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@openzeppelin/contracts": "^4.8.2",
+		"crypto-js": "^4.1.1",
+		"keccak256": "^1.0.6",
+		"merkletreejs": "^0.3.9"
+	}
+}
