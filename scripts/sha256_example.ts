@@ -1,7 +1,6 @@
 function main() {
 	const { MerkleTree } = require('merkletreejs');
 	const SHA256 = require('crypto-js/sha256');
-	const keccak256 = require('keccak256');
 
 	// Example using sha256
 	const data = ['a', 'b', 'c', 'd'];
